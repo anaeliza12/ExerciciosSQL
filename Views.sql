@@ -15,3 +15,14 @@
 --WITH CHECK OPTION CONSTRAINT DEPT50_CK  3
 
 --DESC DEPT50                             4
+
+--UPDATE DEPT50
+--SET DEPTNO = 80
+--WHERE EMPLOYEE = 'Matos'
+
+--                                          5
+--UPDATE DEPT50
+--SET  EMPLOYEE='Mato'
+--WHERE EMPLOYEE='Matos';
+
+--ROLLBACK

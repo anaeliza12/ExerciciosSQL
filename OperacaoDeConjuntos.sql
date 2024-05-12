@@ -15,3 +15,23 @@
 --WHERE d.department_id IS NOT NULL                                2
 
 
+--SELECT job_id, department_id, 1 ex
+--FROM employees
+--WHERE department_id = 10  
+--UNION 
+--SELECT job_id, department_id,2  ex
+--FROM employees
+--WHERE department_id = 50 
+--UNION
+---SELECT job_id, department_id, 3  ex
+--FROM employees
+--WHERE department_id = 20 
+--ORDER BY ex                                3
+
+
+
+
+
+
+
+

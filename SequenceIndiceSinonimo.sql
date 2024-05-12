@@ -5,10 +5,13 @@
 
 
 
---INSERT INTO DEPT (dept_id, dname) VALUES (DEPT_ID_SEQ.CURRVAL, 'Education') 
---INSERT INTO DEPT (dept_id, dname) VALUES (DEPT_ID_SEQ.NEXTVAL, 'Administration') 
+--INSERT INTO DEPT (dept_id, dname) VALUES (DEPT_ID_SEQ.CURRVAL, 'Education'); 
+--INSERT INTO DEPT (dept_id, dname) VALUES (DEPT_ID_SEQ.NEXTVAL, 'Administration')  2
 
 --SELECT *
---FROM dept                            2
+--FROM dept                           3                      
 
---CREATE INDEX DEPT_ID ON DEPT(dept_id)     3
+
+--CREATE SYNONYM EMP FOR EMPLOYEES         4
+
+

@@ -4,3 +4,9 @@
 --MAXVALUE 1000                  1
 
 
+
+--INSERT INTO DEPT (dept_id, dname) VALUES (DEPT_ID_SEQ.CURRVAL, 'Education') 
+--INSERT INTO DEPT (dept_id, dname) VALUES (DEPT_ID_SEQ.NEXTVAL, 'Administration') 
+
+--SELECT *
+--FROM dept                            2 

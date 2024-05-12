@@ -14,3 +14,4 @@
 --WHERE department_id = 50
 --WITH CHECK OPTION CONSTRAINT DEPT50_CK  3
 
+--DESC DEPT50                             4

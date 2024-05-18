@@ -18,3 +18,16 @@ FROM sal_history
 
 SELECT *
 FROM mgr_history
+
+
+INSERT ALL
+INTO sales_info VALUES (employee_id, week, monday)
+INTO sales_info VALUES (employee_id, week, tuesday)
+INTO sales_info VALUES (employee_id,week, wednesday)
+INTO sales_info VALUES (employee_id,week, thursday)
+INTO sales_info VALUES (employee_id, week, friday)
+SELECT employee_id, week_id AS week, sales_mon as monday , sales_tue as tuesday, sales_wed as wednesday, sales_thur as thursday, sales_fri as friday
+FROM sales_source_data
+
+SELECT *
+FROM sales_info

@@ -31,3 +31,9 @@ FROM sales_source_data
 
 SELECT *
 FROM sales_info
+
+
+SELECT manager_id, job_id, SUM(salary) SOMATOTAL
+FROM employees
+WHERE manager_id < 120
+GROUP BY ROLLUP (manager_id, job_id)

@@ -38,4 +38,4 @@ GROUPING(manager_id) as MANAGER_GROUPING,
 GROUPING(job_id) as JOB_GROUPING
 FROM employees
 WHERE manager_id < 120
-GROUP BY ROLLUP (manager_id, job_id)
+GROUP BY CUBE (manager_id, job_id)

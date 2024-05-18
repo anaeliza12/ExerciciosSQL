@@ -33,9 +33,10 @@ SELECT *
 FROM sales_info
 
 
-SELECT manager_id, job_id, SUM(salary) SOMATOTAL,
-GROUPING(manager_id) as MANAGER_GROUPING,
-GROUPING(job_id) as JOB_GROUPING
+SELECT department_id, manager_id, job_id, SUM(salary) SOMATOTAL
 FROM employees
-WHERE manager_id < 120
-GROUP BY CUBE (manager_id, job_id)
+GROUP BY GROUPING SETS (
+(department_id, manager_id, job_id),
+(department_id, job_id),
+(manager_id, job_id)
+);

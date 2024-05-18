@@ -14,3 +14,10 @@
 --SALARY NUMBER(8,2));     
 
 --describe MGR_HISTORY                     2
+
+--drop TABLE SPECIAL_SAL;
+--CREATE table SPECIAL_SAL
+--(EMPLOYEE_ID NUMBER(6),
+--SALARY NUMBER(8,2));
+
+--describe SPECIAL_SAL                     3

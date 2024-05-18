@@ -33,7 +33,9 @@ SELECT *
 FROM sales_info
 
 
-SELECT manager_id, job_id, SUM(salary) SOMATOTAL
+SELECT manager_id, job_id, SUM(salary) SOMATOTAL,
+GROUPING(manager_id) as MANAGER_GROUPING,
+GROUPING(job_id) as JOB_GROUPING
 FROM employees
 WHERE manager_id < 120
 GROUP BY ROLLUP (manager_id, job_id)

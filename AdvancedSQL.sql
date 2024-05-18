@@ -1,23 +1,20 @@
+INSERT ALL
+WHEN salary > 20000 THEN
+    INTO special_sal VALUES (employee_id, salary)
+ELSE
+INTO sal_history  VALUES (employee_id, hire_date, salary)
+INTO mgr_history  VALUES (employee_id, manager_id, salary)
+SELECT employee_id, hire_date, salary, manager_id
+FROM employees 
+WHERE employee_id < 125
 
---DROP TABLE SAL_HISTORY;
---CREATE table SAL_HISTORY
---(EMPLOYEE_ID NUMBER(6),
---HIRE_DATE DATE,
---SALARY NUMBER(8,2));
+SELECT *
+FROM special_sal
 
---describe sal_history                    1
 
---DROP TABLE MGR_HISTORY;
---CREATE table MGR_HISTORY
---(EMPLOYEE_ID NUMBER(6),
---MANAGER_ID NUMBER(6),
---SALARY NUMBER(8,2));     
+SELECT *
+FROM sal_history
 
---describe MGR_HISTORY                     2
 
---drop TABLE SPECIAL_SAL;
---CREATE table SPECIAL_SAL
---(EMPLOYEE_ID NUMBER(6),
---SALARY NUMBER(8,2));
-
---describe SPECIAL_SAL                     3
+SELECT *
+FROM mgr_history
